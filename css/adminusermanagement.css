@@ -1,0 +1,132 @@
+﻿body {
+}
+
+
+
+
+
+
+#bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 0%;
+}
+
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.row1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+
+.bod {
+    position: relative;
+    background: rgba(0,0,0,0.6);
+    /* margin: 300px; */
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 100%;
+    width: 50%;
+    border: solid 3px rgba(0,0,0,0.6);
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+.new {
+    position: relative;
+    margin-left: 5%;
+    padding-top: 2%;
+}
+
+
+.lable {
+    position: relative;
+    padding-top: 3%;
+    margin-left: 5%;
+}
+
+    .lable .lim {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+
+        .lable .lim .lis {
+            position: relative;
+            margin-right: 20px;
+            width: 30%;
+        }
+
+
+
+.new .tlab /*lable*/ {
+    margin-top: 0px;
+    font-size: 40px;
+    color: rgb(231, 64, 162);
+    text-shadow: 0 0 10px #cd1fb6;
+    font-weight: lighter;
+}
+
+
+
+
+
+label {
+    color: aliceblue;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+span {
+}
+
+
+
+
+.form-control {
+    background-color: rgba(0,0,0,0.1);
+    height: 45px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    border: 0px solid #3ccbf7;
+    font-size: 20px;
+    color: #3ccbf7;
+    background-color: darkslategray;
+}
+
+    .form-control:focus {
+        outline: none;
+    }
+
+
+.btnln {
+    width: 30%;
+    background-color: rgba(0,0,0,0.5);
+    border: 3px solid #3ccbf7; /* login button color before */
+    margin-top: 40px;
+    height: 45px;
+    margin-left: 2%;
+    border-radius: 5px;
+    font-size: 25px;
+    /* text-transform: uppercase; */
+    color: #45f3ff; /* font color */
+
+    cursor: pointer;
+}
+
+    .btnln:focus {
+        outline: none;
+    }
+
+    .btnln:hover {
+        box-shadow: 0 0 15px #3ccbf7;
+    }

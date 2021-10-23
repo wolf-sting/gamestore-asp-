@@ -1,0 +1,364 @@
+/* FOR UPPER MAIN SLIDESHOW */
+.slideshow{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    animation: slide 28s infinite;
+}
+
+@keyframes slide {
+    0% { background: url(pic2/sls106.jpg);background-size: cover;}
+    25% {background: url(pic2/sls104.jpg);background-size: cover;}
+    50% {background: url(pic2/sls101.jpg);background-size: cover;}
+    75% {background: url(pic2/sls105.jpg);background-size: cover;}
+    100% { background: url(pic2/sls103.jpg);background-size: cover;}
+}
+
+
+
+
+/* h1{
+    color: orange;
+    
+} */
+
+
+
+/* FOR GAMES AREA TILES */
+.FG{
+    position: relative;
+    background: #000;
+    min-height: 100vh;
+}
+.FG h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 80px;
+    text-shadow: 0 0 15px 	#cd1fb6;
+}
+.FG .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #000;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.FG .container .box{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    color: #fff;
+    margin: 30px;
+    
+    z-index: 1;
+    border-radius: 1%;
+    /* box-shadow: 0 0 15px 	#fff; */
+    border: 3px solid #3ccbf7;
+}
+.FG .container .box:hover{
+    /* border: 3px solid #cd1fb6; */
+    box-shadow: 0 0 15px 	#3ccbf7;
+}
+
+.FG .container .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+    /* border-radius: 1%; */
+    
+    /* align: center; */
+}
+
+
+.FG .container .box .imgBox img{
+    position: absolute;
+    
+    /* width: 100%; */
+    height: 100%;
+    /* left: -80px; */
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+
+.FG .container .box:hover .imgBox img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+.FG .container .box .detail{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    
+    background: rgba(0, 0, 0, 0);
+    transition: 1s;
+    /* transform: scaleY(0);
+    transition: transform 1s; */
+}
+.FG .container .box:hover .detail{
+    /* transform: scaleY(1); */
+    background: linear-gradient(to right, rgba(60,203,247,0.2), rgba(205,31,182,0.2));
+    /* background: rgba(0,0,0,0.2); */
+
+}
+
+.FG .container .box .detail .cont{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #3ccbf7,0px 0px 5px #cd1fb6;
+}
+.FG .container .box .detail .cont h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+.FG .container .box .detail .cont p{
+    margin: 0 0 0;
+    padding: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.FG .container .box:hover .detail .cont p{
+    /* transform: scaleY(1); */
+
+    opacity: 1;
+    visibility: visible;
+    margin: 20px 0 0;
+}
+
+.FG .btn{
+    margin: auto;
+    width: 60%;
+    /* border: 1px solid #fff; */
+    padding: 10px;
+
+}
+
+.FG .btn .button{
+    
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px;
+    /* align: center; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    box-sizing: border-box;
+    margin-left: 45%;
+    margin-top: 20px;
+    /* transition: 1s; */
+    
+}
+.FG .btn .button:hover{
+    border-color: #3ccbf7;
+    
+}
+
+
+
+
+
+
+
+
+/* for NEWS UPDATE AREA */
+.LU{
+    position: relative;
+    background: #000;
+    min-height: 100vh;
+    /* border-top: 3px solid #3ccbf7;
+    border-bottom: 3px solid #3ccbf7; */
+}
+.LU h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 80px;
+    text-shadow: 0 0 15px 	#cd1fb6;
+    /* padding: 20px 50% 20px 50%; */
+}
+
+.LU .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #000;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.LU .container .box{
+    position: relative;
+    width: 340px;
+    height: 650px;
+    color: #fff;
+    margin: 30px;
+    
+    z-index: 1;
+    border-radius: 1%;
+    /* box-shadow: 0 0 15px 	#cd1fb6; */
+    /* border: 3px solid #cd1fb6; */
+    border: 3px solid #3ccbf7;
+    box-shadow: 0 0 15px 	#3ccbf7;
+    transition: transform 0.5s;
+}
+.LU .container .box:hover{
+    transform: scale(1.02);
+}
+
+.LU .container .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    /* overflow: hidden; */
+    border-radius: 1%;
+    
+    /* border: 3px solid #3ccbf7; */
+    /* align: center; */
+    /* transition: transform 1s; */
+}
+
+/* .LU .container .box:hover .imgBox{
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 	#cd1fb6;
+} */
+
+.LU .container .box .imgBox img{
+    position: absolute;
+    
+    max-width: 100%;
+
+    object-fit: cover;
+    width: 350px;
+    height: 250px;
+    
+    
+    /* left: -80px; */
+    
+    /* transition: transform 1s; */
+}
+
+
+/* .LU .container .box:hover .imgBox img{
+    transform: scale(1.1);
+} */
+
+.LU .container .box .content{
+    position: absolute;
+    /* text-align: center; */
+    top: 250px;
+    left: 20px;
+}
+
+.LU .container .box .content h3{
+    font-size: 27px;
+    padding: 10px;
+}
+.LU .container .box .content p{
+    /* font-family: 'Open Sans', sans-serif; */
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.LU .btn{
+    margin: auto;
+    width: 60%;
+    /* border: 1px solid #fff; */
+    padding: 10px;
+
+}
+
+.LU .btn .button{
+    
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px;
+    /* align: center; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    box-sizing: border-box;
+    margin-left: 45%;
+    margin-top: 20px;
+    
+    
+}
+.LU .btn .button:hover{
+    border-color: #3ccbf7;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOR communications banner for devices */
+.lowbanner{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: url(pic2/bannerl3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* for MOVING BAR */
+marquee{
+    font-size: 250%;
+    
+    border: 3px solid #3ccbf7;
+    padding: 5px;
+    /* box-shadow: 0 0 15px 	#3ccbf7; */
+
+    word-spacing: 200px;
+    z-index: 1;
+    
+}

@@ -1,0 +1,173 @@
+@font-face {
+    font-family: staat;
+    src: url(Staatliches-Regular.ttf);
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'staat';
+    
+}
+
+body{
+    background-color: #000000;
+    /* min-height: 200vw; */
+
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /* background: #000; */
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 5px 5px;
+    z-index: 100000;
+    border: 2px solid #3ccbf7;
+
+    
+}
+
+
+
+
+
+header.sticky{
+    /* padding: 5px 5px; */
+    background: rgba(0,0,0,0.6);
+    /* For Transparency */
+    
+    /* border: 3px solid skyblue; */
+    /* box-shadow: 0 0 15px 	#3ccbf7; */
+    
+}
+
+header #logo{
+    position: relative;
+    font-weight: 700;
+    /* color: #fff; */
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+    /* border: 3px solid #3ccbf7; */
+    border-radius: 1%;
+    padding: 5px 20px 5px 20px;
+    /* box-shadow: 0 0 15px 	#3ccbf7; */
+    
+}
+
+#log1{
+    color: rgb(231, 64, 162);
+    text-shadow: 0 0 15px 	#cd1fb6;
+}
+
+#log2{
+    color: #ffffff; 
+    text-shadow: 0 0 15px 	#cd1fb6;
+}
+
+
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: larger;
+    transition: 0.6s;
+}
+
+header ul li a:hover{
+    color: rgb(231, 64, 162);
+    text-shadow: 0 0 15px 	#cd1fb6;
+}
+
+
+header ul li ul{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+}
+
+header ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li{
+    /* border-right: none;
+    border-bottom: 1px solid  rgba(255, 255, 255, .2); */
+}
+
+
+
+
+header.sticky #logo{
+    border: none;
+    box-shadow: none;
+}
+
+header.sticky ul li a{
+    
+}
+
+
+
+
+
+
+/* .banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(pic2/BLPA.jpg);
+    background-size: cover;
+} */
+
+
+
+
+
+
+
+
+
+
+/* for removing scrollbar */
+::-webkit-scrollbar{
+    width: 0;
+}

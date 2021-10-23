@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main2.master.cs" Inherits="NeoArcade.Main2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="css/navside.css">
+        <script src="https://kit.fontawesome.com/13a57ca339.js" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="css/stylehead1.css">
+        <link rel="stylesheet" href="css/stylebody1.css">
+        
+
+    <link href="css/stylefoot1.css" rel="stylesheet" />
+
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+            
+         
+
+             <!-- MENU AREA or HEADER -->
+        <header style="position:sticky;">
+        <a href="Home.aspx" id="logo"><b id="log1">NEO</b><b id="log2">ARCADE</b></a>
+        <ul>
+        <li><a href="Home.aspx">Home</a></li>
+        <li><a href="#">Games</a>
+        <ul>
+            <li><a href="#">Featured Games</a></li>
+            <li><asp:LinkButton ID="LinkButton15" runat="server" OnClick="LinkButton15_Click">All Games</asp:LinkButton></li>
+            <li><a href="#">Coming Soon</a></li>
+            <li><a href="#">Free to play.</a></li>
+        </ul>
+        </li>
+        <li><a href="#">More Experience</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+
+
+        <li><asp:LinkButton ID="LinkButton1" runat="server"><i class="fas fa-search"></i></asp:LinkButton>
+           <ul>
+               <li><input type="text" name="" class="" placeholder="Search...">
+                   <button type="submit"><i class="fa fa-search"></i></button></li>
+           </ul>
+       </li>
+       <li><asp:LinkButton ID="LinkButton2" runat="server"><i class="fas fa-shopping-cart"></i></asp:LinkButton></li>
+       <li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click"><i class="far fa-user"></i></asp:LinkButton></li>
+
+       <li><asp:LinkButton ID="LinkButton4" runat="server" Visible="False"><i class="fas fa-user"></i></asp:LinkButton>
+           <ul style="left:-150px;width:200px;">
+               <li><asp:LinkButton ID="LinkButton12" runat="server">Hello User</asp:LinkButton></li>
+               <li><asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton13_Click">Edit A/C.</asp:LinkButton></li>
+               <li><asp:LinkButton ID="LinkButton14" runat="server" OnClick="LinkButton14_Click">Logout</asp:LinkButton></li>
+           </ul>
+       </li>
+
+      <li><asp:LinkButton ID="LinkButton5" runat="server" Visible="False"><i class="fas fa-users"></i></asp:LinkButton>
+          <ul style="left:-150px;width:200px;">
+               <li><asp:LinkButton ID="LinkButton16" runat="server">Hello Admin</asp:LinkButton></li>
+               <li><asp:LinkButton ID="LinkButton18" runat="server" OnClick="LinkButton18_Click">Logout</asp:LinkButton></li>
+           </ul>
+      </li>
+
+        </ul>
+        </header>
+  
+        <!-- JAVASCRIPT for MENU or NAVBAR-->
+        <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+        })
+        </script>
+
+
+
+
+
+
+        <!-- MAIN CONTENT PLACE HOLDER-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <!-- MAIN CONTENT PLACE HOLDER-->
+
+
+
+
+
+
+            <!-- FOOTER or ENDING area -->
+        <footer>
+
+        <!-- FOOTER WRITTEN AREA -->
+
+        <div class="foot">
+  
+    
+    
+        <ul>
+        <h1>POPULAR GAMES</h1>  
+        <hr>
+        <br>
+        <li><a href="https://www.cyberpunk.net/"><b>&spades;</b> Cyberpunk 2077</a> </li>
+        <li><a href="#"><b>&clubs;</b> Watch dogs: Legion</a> </li>
+      <li><a href="#"><b>&hearts;</b> Apex Legends</a> </li>
+      <li><a href="#"><b>&diams;</b> Farcry 6</a> </li>
+        </ul>
+  
+        <ul>
+        <h1>COMPANY</h1>  
+        <hr>
+        <br>
+        <li><a href="#">Terms</a> </li>
+        <li><a href="#">Services</a> </li>
+        <li><a href="#">Contact Us</a> </li>
+        <li><a href="#">Support</a> </li>
+        </ul>
+
+        <ul>
+        <h1>LEGAL</h1>
+        <hr>
+        <br>
+        <li><a href="#">Privacy Policy</a> </li>
+        <li><a href="#">Cookie Policy</a> </li>
+        <li><a href="#">Cookie Setting</a> </li>
+        <li><a href="#">Online Safety</a> </li>
+        </ul>
+
+        <ul>
+        <h1>HELP</h1>
+        <hr>
+        <br>
+        <li><a href="#">Help Center</a> </li>
+        <li><a href="#">Gift Cards</a> </li>
+        <li><a href="#">Order History</a> </li>
+        <li><a href="#">Recall Notice</a> </li>
+        </ul>
+
+            <ul>
+                <h1><i class="fas fa-users"></i></h1>
+                <hr>
+                <br>
+                <li>
+                    <asp:LinkButton ID="LinkButton6" CssClass="alo" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton7" CssClass="alo" runat="server" OnClick="LinkButton7_Click" Visible="False">Developer Management</asp:LinkButton></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton8" CssClass="alo" runat="server" OnClick="LinkButton8_Click" Visible="False">Publisher Management</asp:LinkButton></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton9" CssClass="alo" runat="server" OnClick="LinkButton9_Click" Visible="False">Game Inventory</asp:LinkButton></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton10" CssClass="alo" runat="server" OnClick="LinkButton10_Click" Visible="False">Game Buying</asp:LinkButton></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton11" CssClass="alo" runat="server" OnClick="LinkButton11_Click" Visible="False">User Management</asp:LinkButton></li>
+            </ul>
+
+        </div>
+
+        <div class="bottom">
+            <h1>NeoArcade.&reg;</h1>
+  
+            <p>&copy;copyright 2020. All rights reserved. 
+                NeoArcade and NeoArcade logo are trademarks of 
+                NeoArcade in the U.S. and/or other countries. </p>
+        </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+        
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+
+
+
+/* div position */
+.wrapper {
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+  width: 550px;
+  z-index: 1;
+}
+
+/* remove bullets */
+.wrapper ul {
+  list-style: none;
+}
+
+/* border and li*/
+.wrapper ul li {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+  /* border-radius: 50%;
+  border: 5px solid #D8E2DC; */
+}
+
+/* list item(font)color, positioning*/
+.wrapper ul li .fa {
+  color: #fafffc;
+  margin-top: 15px;
+}
+
+/* li border shadows and icon hover-color*/
+
+.wrapper ul li:hover.facebook {
+  /* border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998; */
+
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 5px #3b5998;
+
+}
+
+
+.wrapper ul li:hover.twitter {
+  /* border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced; */
+
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 5px #00aced;
+
+}
+
+
+.wrapper ul li:hover.instagram {
+  /* border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d; */
+
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 5px #bc2a8d;
+}
+
+
+
+
+.wrapper ul li:hover.youtube {
+  /* border: 5px solid 	#cd201f;
+  box-shadow: 0 0 15px 	#cd201f; */
+
+}
+
+.wrapper ul li:hover .fa-youtube {
+  color: 	#cd201f;
+  text-shadow: 0 0 5px #cd201f;
+
+}
